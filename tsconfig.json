@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+     "target": "ES2022",
+     "module": "CommonJS",
+     "lib": ["DOM", "ES6"],
+     "baseUrl": ".",
+     "outDir": "./build",
+     "rootDir": "src",
+     "strict": true,
+     "noImplicitAny": true,
+     "noUnusedLocals": false,
+     "noUnusedParameters": false,
+     "moduleResolution": "Node",
+     "esModuleInterop": true,
+     "sourceMap": true,
+     "experimentalDecorators": true,
+     "emitDecoratorMetadata": true,
+     "forceConsistentCasingInFileNames": true,
+     "allowSyntheticDefaultImports": true,
+     "strictPropertyInitialization": false,
+     "pretty": true,
+     "resolveJsonModule": true,
+     "paths": {
+        "@constant/*": ["src/constants/*"],
+        "@controller/*": ["src/controllers/*"],
+        "@dto/*": ["src/dtos/*"],
+        "@helper/*": ["src/helpers/*"],
+        "@interface/*": ["src/interfaces/*"],
+        "@middleware/*": ["src/middlewares/*"],
+        "@service/*": ["src/services/*"],
+        "@entity/*": ["src/entities/*"],
+        "@authentication/*": ["src/authentication/*"],
+        "@decorator/*": ["src/decorators/*"],
+        "@src/*": ["src/*.ts"]
+
+     }
+     
+  },
+  "include": ["./src/**/*", "start-dev.js", "src/ecosystem.config.js"]
+}
+
+
+
+
+
+
+
+
